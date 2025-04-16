@@ -11,7 +11,7 @@
         . # . # . 
         . # . # .
         `</field><next><block type="device_pause" id="j.Gk3hL0n|jOvdk|-*=$"><value name="pause"><shadow type="timePicker" id="~[l2l-/R(q#AcoB}r`k*"><field name="ms">200</field></shadow></value><next><block type="device_show_leds" id="?@Z{gQ_NUO}UEI+TEThG"><field name="LEDS">`
-        # . . # . 
+        . # . # . 
         . # . # . 
         . . # . . 
         . # # # . 
