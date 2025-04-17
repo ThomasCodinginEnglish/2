@@ -1,33 +1,13 @@
 basic.forever(function () {
-    basic.showLeds(`
-        . . # . .
-        . # # # .
-        # . # . #
-        . . # . .
-        . # . # .
-        `)
-    basic.showLeds(`
-        # . . . #
-        . # . # .
-        . . # . .
-        . # . # .
-        . # . # .
-        `)
-    basic.pause(200)
-    basic.showLeds(`
-        . # . # .
-        . # . # .
-        . . # . .
-        . # # # .
-        # . # . #
-        `)
-    basic.pause(200)
-    basic.showLeds(`
-        # . . . #
-        . # . # .
-        . . # . .
-        . # # # .
-        # . # . #
-        `)
-    basic.pause(200)
+    if (input.lightLevel() < 100) {
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # . # . #
+            . # . # .
+            . # . # .
+            `)
+    } else {
+        basic.clearScreen()
+    }
 })
