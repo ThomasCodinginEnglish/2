@@ -1,11 +1,29 @@
 let random = 0
-input.onGesture(Gesture.Shake, function () {
+basic.forever(function () {
     random = randint(1, 3)
     if (random == 1) {
-        basic.showIcon(IconNames.SmallSquare)
+        basic.showLeds(`
+            . # . # .
+            . # . # .
+            # . . . #
+            . # # # .
+            . . . . .
+            `)
     } else if (random == 2) {
-        basic.showIcon(IconNames.Square)
+        basic.showLeds(`
+            . # . # .
+            # # # # #
+            # # # # #
+            . # # # .
+            . . # . .
+            `)
     } else {
-        basic.showIcon(IconNames.Scissors)
+        basic.showLeds(`
+            . . . . .
+            . . # . .
+            . # # # .
+            # # # # #
+            . . . . .
+            `)
     }
 })
